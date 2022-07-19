@@ -35,6 +35,12 @@ public class TeamServiceImpl implements TeamService {
     }
 
     @Override
+    public TeamDto updateTeam(TeamDto teamDto) {
+        return mapper.fromEntityToTeamDto(teamRepository.save(mapper.fromTeamDtoToEntity(teamDto)));
+    }
+
+    @Override
     public void deleteTeam(Long id) {
+        teamRepository.deleteById(id);
     }
 }

@@ -45,7 +45,7 @@ public class Controller {
     }
 
     @PostMapping("save/cyclist")
-    public CyclistDto saveCyclist(@RequestBody CyclistDto cyclistDto){
+    public CyclistDto saveCyclist(@RequestBody CyclistDto cyclistDto) throws Exception {
         return cyclistService.createCyclist(cyclistDto);
     }
 

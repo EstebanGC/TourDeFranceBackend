@@ -9,7 +9,7 @@ public interface CyclistService {
 
     List<CyclistDto> findAllCyclists();
 
-    CyclistDto createCyclist(CyclistDto cyclistDto);
+    CyclistDto createCyclist(CyclistDto cyclistDto) throws Exception;
 
     CyclistDto updateCyclist(CyclistDto cyclistDto);
 

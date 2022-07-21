@@ -2,7 +2,6 @@ package com.example.demo.dto;
 
 import com.example.demo.entity.Cyclist;
 import com.example.demo.entity.Team;
-import org.jetbrains.annotations.NotNull;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -34,7 +33,7 @@ public class Mapper {
         team.setId(teamDto.getId());
         team.setName(teamDto.getName());
         team.setCountry(teamDto.getCountry());
-        List<Cyclist> cyclits = new ArrayList<>();
+        List<Cyclist> cyclists = new ArrayList<>();
     return team;
     }
 
